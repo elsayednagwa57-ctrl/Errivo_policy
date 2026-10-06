@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Errivo Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+  }
+  h1 { font-size: 1.6rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  .meta { color: #666; font-size: 0.9rem; margin-top: 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+  th, td { text-align: left; padding: 0.5rem 0.75rem; border-bottom: 1px solid #ddd; vertical-align: top; }
+  th { width: 30%; }
+  code { background: rgba(127,127,127,0.15); padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.9em; }
+  .note { border-left: 3px solid #888; padding-left: 1rem; }
+  footer { margin-top: 3rem; font-size: 0.9rem; color: #666; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #16181a; color: #e6e6e6; }
+    .meta, footer { color: #9aa0a6; }
+    th, td { border-bottom-color: #333; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Errivo Privacy Policy</h1>
+<p class="meta">Last updated: 5 October 2026 &middot; Version 1.0.0 &middot; Package <code>com.errivo2026.errivo</code></p>
+
+<h2>Short version</h2>
+<p>
+Errivo collects nothing, sends nothing, and has no account system. Everything you
+paste, analyze, save, or configure stays on your device. Errivo cannot read your
+data, because it has no permission or mechanism to transmit it.
+</p>
+
+<h2>What Errivo does not do</h2>
+<ul>
+  <li>Errivo requests <strong>no Android permissions</strong>. Its manifest declares no <code>uses-permission</code> entries at all, including no internet access.</li>
+  <li>Errivo contains <strong>no analytics, telemetry, crash reporting, advertising, or attribution SDKs</strong>.</li>
+  <li>Errivo has <strong>no account, login, server, or backend</strong>. There is no service to sign in to.</li>
+  <li>Errivo makes <strong>no network requests</strong> of any kind. It is fully functional with the device in airplane mode.</li>
+  <li>Errivo does not <strong>participate in platform backup</strong>. Android cloud backup and device-to-device transfer are both disabled, so your saved analyses and settings are never copied off the device by the operating system.</li>
+</ul>
+
+<h2>What stays on your device</h2>
+<p>Errivo stores two categories of data, both locally:</p>
+
+<table>
+  <tr><th>Saved analyses</th><td>Log text you chose to save, along with the detected pattern, root cause lines, suggestions, severity, and timestamp. Stored in a private on-device database (Room / SQLite) inside the app's sandbox.</td></tr>
+  <tr><th>Settings</th><td>Your theme choice (system, light, dark), language choice (system, English, Arabic), and whether analyses are saved to history. Stored in private on-device preferences (DataStore).</td></tr>
+</table>
+
+<p>
+App settings, the current screen, and text you are actively editing are held in memory only
+and are not written to storage unless you explicitly save an analysis.
+</p>
+
+<h2>Log content may be sensitive</h2>
+<p class="note">
+Logs frequently contain file paths, class names, device identifiers, hostnames, and
+sometimes fragments of application data. Errivo stores whatever you paste, so you should
+avoid pasting secrets, credentials, or personal data into a log. Saved analyses are
+protected by the operating system's normal app sandbox and app-lock mechanisms, but they
+are not separately encrypted by Errivo.
+</p>
+
+<h2>How to delete your data</h2>
+<ul>
+  <li>Delete a single saved analysis from the History tab.</li>
+  <li>Delete all saved analyses from the History tab.</li>
+  <li>Reset individual settings from the Settings tab.</li>
+  <li>Use <strong>Settings &rarr; Erase all app data</strong> to delete all saved analyses, all settings, and everything else Errivo stores.</li>
+  <li>Uninstall the app. Because Errivo stores nothing off-device, uninstalling removes everything permanently.</li>
+</ul>
+<p>Deleting data cannot be undone.</p>
+
+<h2>Children</h2>
+<p>
+Errivo is a developer utility intended for adults. Because Errivo collects no data from
+anyone, it does not knowingly collect data from children under 13 or any other age.
+</p>
+
+<h2>Your rights</h2>
+<p>
+Errivo collects no personal information, so there is nothing for us to disclose, correct,
+export, or delete on request, and no data for us to sell or share. Because all data lives
+only on your device, you are always in full control of it through the controls listed above.
+</p>
+
+<h2>Third-party components</h2>
+<p>
+Errivo bundles open-source libraries under their own licenses (including AndroidX, Kotlin,
+Jetpack Compose, Hilt, and Room). These libraries run entirely on-device and do not
+introduce analytics or network access. Their source licenses are included in the app's
+license notices.
+</p>
+
+<h2>Changes to this policy</h2>
+<p>
+If this policy changes, the updated version will be published with the corresponding app
+release, and the "Last updated" date above will change. A material change in data handling
+would be called out in the release notes.
+</p>
+
+<h2>Contact</h2>
+<p>
+Questions about this policy or about Errivo's privacy practices can be sent to
+<strong>[INSERT CONTACT EMAIL]</strong>.
+</p>
+
+<footer>
+Errivo is an offline log-analysis utility. It does not collect, transmit, or share data.
+</footer>
+
+</body>
+</html>
